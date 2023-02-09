@@ -1,6 +1,7 @@
 
 import '../css/styles.css';
 
+
 // Business Logic
 
 function getWeather (city) {
@@ -11,7 +12,8 @@ function getWeather (city) {
 
   //Next, we save the URL for our API call in a variable called url//
 
-const url = `http://api.openweathermap.org/data/2.5/weather?p=${city}&appid=${process.env.API_KEY}`;
+
+const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${state}&appid=${process.env.API_KEY}`;
 
 
   //Next, we set up an event listener that listens for when our API call is complete:// 
